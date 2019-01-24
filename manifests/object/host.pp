@@ -28,7 +28,7 @@ define icinga2::object::host (
   $enable_passive_checks   = undef,
   $enable_event_handler    = undef,
   $enable_flapping         = undef,
-  $enable_perfdata         = undef,
+  $enable_perfdata         = true,
   $event_command           = undef,
   #flapping_threshold is defined as a percentage, eg. 10%, 50%, etc.
   $flapping_threshold      = undef,
